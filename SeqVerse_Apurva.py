@@ -78,8 +78,32 @@ with tabs[0]:
 # ------------------- TOOL TAB ---------------------
 with tabs[1]:
     st.markdown("## 📥 DNA Sequence Input")
-    st.markdown("<div class='result-box'><b>Paste your DNA sequence (A, T, G, C only):</b></div>", unsafe_allow_html=True)
-    dna_input = st.text_area("", height=150).upper()
+
+    # Custom styles
+    st.markdown("""
+        <style>
+        /* Gradient background for textarea */
+        section[data-testid="stTextArea"] textarea {
+            background: linear-gradient(135deg, #a1ffce 0%, #faffd1 100%) !important;
+            border-radius: 10px !important;
+            border: 2px solid #00d4ff !important;
+            color: black !important;
+            font-weight: bold !important;
+        }
+
+        /* Style the button: force black text */
+        div.stButton > button {
+            color: black !important;
+            font-weight: bold;
+            background-color: #d1faff; /* Optional: soft cyan background */
+            border: 1px solid #00d4ff;
+        }
+        </style>
+    """, unsafe_allow_html=True)
+
+    # Input and button
+    dna_input = st.text_area("Paste your DNA sequence (A, T, G, C only):", height=150).upper()
+    run_analysis = st.button("▶️ Run Analysis", use_container_width=True)
 
     def clean_sequence(seq):
         return ''.join([base for base in seq if base in ['A', 'T', 'G', 'C']])
