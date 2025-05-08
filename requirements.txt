@@ -3,3 +3,4 @@ Counter
 matplotlib.pyplot
 base64
 streamlit.components.v1
+matplotlib>=3.5.0
