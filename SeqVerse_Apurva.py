@@ -43,7 +43,7 @@ st.markdown(f"""
 st.markdown("<h1 class='white-text'>🧬 SeqVerse</h1>", unsafe_allow_html=True)
 
 # ------------------- TABS ---------------------
-tabs = st.tabs(["🏠 Home", "⚙️ Tool", "ℹ️ About"])
+tabs = st.tabs(["🏠 Home", "📖 User Guide", "⚙️ Tool", "ℹ️ About"])
 
 # ------------------- HOME TAB ---------------------
 with tabs[0]:
@@ -52,7 +52,7 @@ with tabs[0]:
     <div class='white-text'>
     <strong>SeqVerse</strong> is an interactive bioinformatics toolkit built to empower students and researchers in decoding genetic data.  
     
-    This toolkit enables real-time <strong>DNA analysis</strong>, <strong>transcription</strong>, <strong>translation</strong>, and visualization of important genomic features.
+    This toolkit enables real-time <strong>DNA sequence analysis</strong>, <strong>transcription</strong>, <strong>translation</strong>, and visualization of important genomic features.
 
     <h3>🎯 Objectives:</h3>
     <ul>
@@ -74,9 +74,53 @@ with tabs[0]:
     </div>
     """, unsafe_allow_html=True)
 
-
-# ------------------- TOOL TAB ---------------------
+# ------------------- USER GUIDE TAB ---------------------
 with tabs[1]:
+    st.markdown("## 📖 User Guide")
+    st.markdown("""
+    <div class='white-text'>
+    Welcome to the **SeqVerse** User Guide. This section provides instructions on how to effectively use the toolkit for DNA sequence analysis.
+
+    ### Step 1: Input DNA Sequence
+    - Paste your DNA sequence (using only A, T, G, C bases) into the provided text area. 
+    - The sequence should be without any spaces.
+
+    ### Step 2: Run the Analysis
+    - After entering your DNA sequence, click the **Run Analysis** button or press ctrl+enter to perform various bioinformatics tasks such as:
+        - GC and AT content calculation
+        - Generation of reverse complement sequence
+        - Codon usage statistics
+        - Transcription and translation of the DNA sequence into RNA and protein
+
+    ### Step 3: Explore the Results
+    - **DNA Analysis**: View important metrics like the length of the sequence, GC content, AT content, and the reverse complement.
+    - **Codon Usage**: A bar chart will display the frequency of each codon in the sequence.
+    - **Transcription & Translation**: You will see the corresponding RNA sequence and the protein sequence derived from it. 
+    - The app also calculates and displays the percentage of acidic and basic amino acids in the protein sequence.
+
+    ### Step 4: External Tools Integration
+    - **AlphaFold**: For protein structure prediction, you can copy the protein sequence and paste it into the [AlphaFold server](https://alphafoldserver.com/).
+    - **UniProt BLAST**: Use the UniProt BLAST tool to identify matching proteins by pasting the protein sequence into their BLAST search.
+
+    ### Step 5: Download Results
+    - Once the analysis is complete, you can download a text file with all the results for further use or documentation. Simply click the **Download Results** button.
+
+    ### Key Features:
+    - **DNA to RNA Transcription**: Converts the DNA sequence to RNA.
+    - **Protein Translation**: Translates the RNA into a protein sequence.
+    - **GC & AT Content Analysis**: Calculates the percentage of GC and AT content in the DNA.
+    - **Codon Usage**: Provides a detailed breakdown of the codon usage in the DNA sequence.
+    - **Reverse Complement**: Generates the reverse complement sequence.
+    - **External Tool Links**: Direct access to AlphaFold for protein structure prediction and UniProt for protein identification.
+
+    ### Tips:
+    - Ensure that your DNA sequence contains only valid nucleotides (A, T, G, C).
+    - The protein translation stops if a "STOP" codon is encountered in the RNA sequence.
+    </div>
+    """, unsafe_allow_html=True)
+    
+# ------------------- TOOL TAB ---------------------
+with tabs[2]:
     st.markdown("## 📥 DNA Sequence Input")
 
     # Custom styles
@@ -227,7 +271,7 @@ Codon Usage:
         st.markdown(create_download_link(output_text), unsafe_allow_html=True)
 
 # ------------------- ABOUT TAB ---------------------
-with tabs[2]:
+with tabs[3]:
     
     st.markdown("""
         <div style='text-align: center;'>
