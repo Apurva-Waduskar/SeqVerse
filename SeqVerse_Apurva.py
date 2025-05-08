@@ -325,7 +325,7 @@ with tabs[3]:
     I would like to express my sincere thanks to Dr. Kushagra Kashyap,
     Assistant Professor (Bioinformatics), Department of Life Sciences,
     School of Science and Mathematics, DES Pune University, for his invaluable guidance and academic support during the development of this project.
-    Connect on LinkedIn: [https://www.linkedin.com/in/dr-kushagra-kashyap-b230a3bb/]
+    Connect with Dr. Kashyap on LinkedIn: [https://www.linkedin.com/in/dr-kushagra-kashyap-b230a3bb/]
 
     ### 🔗 Connect
     - 📧 Email: [waduskarapurva@gmail.com]  
