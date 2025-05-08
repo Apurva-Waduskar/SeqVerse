@@ -248,26 +248,25 @@ with tabs[2]:
     - Simplify transcription, translation, and GC content computation  
     - Empower students and researchers with essential bioinformatics tools without needing command-line setups
 
-    ### 🌟 Key Features
-    - 🧬 DNA to RNA Transcription and Protein Translation  
-    - 📈 GC & AT Content and GC Skew Plot  
-    - 🔄 Reverse Complement Generator  
-    - 🧬 Codon Usage Table and Frame-wise Translation  
-    - 🔍 UniProt and PDB Link Integration  
-    - 🧬 Pfam Domain and Signal Peptide Prediction (planned)  
-    - ✂️ Restriction Enzyme Cut Site Analysis (planned)  
+    ### 🔑 Key Features 
+    🧬 DNA to RNA Transcription and Protein Translation  
+    📈 GC and AT Content Calculation  
+    🔄 Reverse Complement Sequence Generator  
+    🧬 Codon Usage Table and Frame-wise Translation  
+    🔍 UniProt Link Integration via REST API  
 
-    ### ⚙️ Tools & Technologies Used
+    ### ⚙️ Tools & Technologies Used  
     - Python and Streamlit for app development  
-    - Biopython for sequence operations and analyses  
-    - Matplotlib and Seaborn for plotting  
-    - External data sources: UniProt, Pfam, InterPro (planned), REBASE (planned)  
+    - Biopython for sequence operations and analysis  
+    - Matplotlib and Seaborn for plotting visualizations  
+    - UniProt REST API for retrieving protein information  
+    - AlphaFold Database for viewing predicted protein 3D structures
 
     ### 💡 Benefits
-    - No installation needed — fully browser-based  
-    - Beginner-friendly interface with modular utilities  
-    - Educational tool to demonstrate real-world bioinformatics workflows  
-    - Expandable design with future feature integration
+    - No installation needed – fully browser-based  
+    - Beginner-friendly interface with intuitive input/output  
+    - Educational tool to demonstrate core bioinformatics concepts  
+    - Modular structure allows for easy addition of future features and tools 
 
     ### 🚀 Future Enhancements
     - Integration with Pfam or InterPro for domain annotation  
