@@ -43,7 +43,7 @@ st.markdown(f"""
 st.markdown("<h1 class='white-text'>🧬 SeqVerse</h1>", unsafe_allow_html=True)
 
 # ------------------- TABS ---------------------
-tabs = st.tabs(["🏠 Home", "🧪 Tool", "ℹ️ About"])
+tabs = st.tabs(["🏠 Home", "⚙️ Tool", "ℹ️ About"])
 
 # ------------------- HOME TAB ---------------------
 with tabs[0]:
