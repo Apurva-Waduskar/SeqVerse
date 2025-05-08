@@ -1,3 +1,6 @@
 streamlit==1.45.0
 matplotlib==3.7.1
 numpy
+collections
+base64
+streamlit.components.v1
