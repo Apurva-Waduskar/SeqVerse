@@ -319,7 +319,7 @@ with tabs[3]:
     - Protein feature visualizations (e.g., transmembrane regions, signal peptides)  
     - Save and export session summaries and plots
 
-    ### 👨‍🏫 Acknowledgements
+    ### 👨‍🏫 Acknowledgement
     Special thanks to the faculty at DES Pune University for their guidance and support throughout this project.
 
     ### 🔗 Connect
